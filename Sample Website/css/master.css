@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Verdana, Sans-Serif;
+    font-size: 62.5%;
+    background-color: #D8D8C0;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+    background-color: #D8D8C0;
+    text-shadow: none;
+    color: #000000;
+}
+h1 {
+    font-size: 2.0em;
+    color: #903030;
+}
+h2 {
+    font-size: 1.6em;
+}
+.container {
+    margin: 0 auto;
+    width: 96%;
+}
+.container table {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.container table tr td {
+    text-align: left;
+    vertical-align: middle;
+}
+.ui-mobile label, .ui-controlgroup-label {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.container table #answer {
+    font-size: 1.6em;
+}
+.container table #answer span {
+    display: block;
+    padding: 5px 0;
+}
+.container table #answer span:first-child {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+.container table #answer .rating {
+    font-weight: bold;
+    display: inline;
+    text-decoration: none;
+    border: none !important;
+}
+.container table .input {
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 0.4em;
+    text-align: center;
+    background-color: #904830;
+    color: #D8D8C0;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.container table .btnOZ {
+    margin: 0 4px 0 0;
+    padding: 8px 0 8px 0;
+    float: left;
+    width: 14%;
+    font-size: 1.6em;
+    border: 1px solid #000000;
+    border-radius: 0.4em;
+    text-align: center;
+    background-color: #904830;
+    color: #D8D8C0;
+    cursor: pointer;
+}
+.container table .btnOZ.selected {
+    background-color: #D8D8C0;
+    color: #904830;
+}
+
+.container table .ui-slider {
+    margin: 10px 0;
+    width: 100%;
+}
+.container table .ui-slider-handle {
+}

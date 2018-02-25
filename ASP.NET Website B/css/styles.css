@@ -1,0 +1,347 @@
+﻿body {
+ margin: 0;
+ padding: 0;
+ font-family: "Montserrat" , sans-serif;
+ font-weight: normal;
+ font-size: 62.5%;
+ line-height: 1.2;
+ color: #000000;
+}
+div, p, h1, h2, h3, img, form {
+ margin: 0;
+ padding: 0;
+ position: relative;
+ display: block;
+}
+a {
+ text-decoration: none;
+}
+img {
+ border: none;
+}
+.container {
+ margin: 0 auto;
+ width: 1024px;
+ box-shadow: 2px 3px 2px 0px rgba(0, 1, 1, 0.3);
+ overflow: auto;
+}
+.container .header {
+ border: none;
+ overflow: visible;
+ height: 79px;
+ line-height: 79px;
+}
+.container .header #logo {
+ float: left;
+ width: 22.16796875%;
+}
+.container .header #logo img {
+ padding: 16px 0 0 12px;
+}
+.container .header #slogan {
+ float: left;
+ width: 56.0546875%;
+}
+.container .header #slogan span {
+ display: block;
+ font-size: 1.8em;
+ text-transform: uppercase;
+ text-align: center;
+ width: 100%;
+}
+.container .header #slogan.right {
+ float: right;
+ width: 52.0546875%;
+}
+.container .header #phone {
+ padding: 0 0.68359375% 0 1.734375%;
+ float: left;
+ width: 18.359375%;
+ text-align: right;
+ display: block;
+}
+.container .header #phone img {
+ display: block;
+ vertical-align: middle;
+ float: left;
+ padding: 26px 0 0 0;
+}
+.container .header #phone #phoneNumber {
+ font-size: 2.0em;
+ line-height: 20px;
+ white-space: nowrap;
+}
+.container .content {
+ overflow: hidden;
+ background: url("../images/save-on-windows-today.png") no-repeat #e5e5e5 center 0;
+ clear: both;
+}
+.container .content .line {
+ background-color: #FFFFFF;
+ box-shadow: 0 3px 2px 0px rgba(0, 1, 1, 0.3);
+ height: 6px;
+}
+.container .content .left {
+ padding: 180px 0 0 0;
+ text-align: center;
+ width: 51.3671875%;
+ float: left;
+}
+.container .content .left img {
+ display: inline;
+}
+.container .content .left p {
+ padding: 24px 0 24px 18px;
+ text-align: left;
+ clear: both;
+ font-family: Georgia, Serif;
+ font-size: 1.2em;
+ color: #7f7f7f;
+}
+.container .content .right {
+ padding-top: 132px;
+ width: 47.94921875%;
+ padding-left: 0.68359375%;
+ float: left;
+}
+.container .content .right h1 {
+ font-weight: 700;
+ text-align: center;
+ font-size: 3.6em;
+ color: #006338;
+}
+.container .content .right h2 {
+ font-weight: 400;
+ text-align: center;
+ font-size: 1.2em;
+ line-height: 34px;
+ color: #4c4c4c;
+ font-family: Georgia, Serif;
+}
+.container .content .right .frm {
+ padding: 22px 38px;
+ overflow: hidden;
+}
+.container .content .right .frm .field {
+ float: left;
+ width: 100%;
+ height: 56px;
+}
+.container .content .right .frm .field.clear {
+ width: 2.6476578%;
+}
+.container .content .right .frm .field .lbl {
+ display: block;
+ font-weight: 700;
+ font-size: 1.0em;
+ line-height: 1.4;
+}
+.container .content .right .frm .field.lng {
+ width: 48.192771084337349397590361445783%;
+}
+.container .content .right .frm .field.med {
+ width: 27.469879518072289156626506024096%;
+}
+.container .content .right .frm .field.sm {
+ width: 17.349397590361445783132530120482%;
+}
+.container .content .right .frm .field .txt {
+ padding-left: 2%;
+ width: 97%;
+ border: 1px solid #7f7f7f;
+ height: 22px;
+ line-height: 22px;
+ background-color: #FFFFFF;
+ color: #000000;
+ outline: none;
+}
+.container .content .right .frm .field .ddl {
+ padding: 0 0 0 1%;
+ width: 98%;
+ border: 1px solid #7f7f7f;
+ height: 26px;
+ line-height: 22px;
+ background-color: #FFFFFF;
+ color: #000000;
+ outline: none;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: normal;
+ background: url("../images/dropdown-icon.png") #FFFFFF no-repeat right 10px;
+}
+.container .content .right .frm .field .req {
+ color: red;
+}
+.container .content .right .frm .field .ddl::-ms-expand {
+ /* for IE 11 */
+ display: none;
+}
+.container .content .right .frm .required {
+ padding: 6px 0 10px 0;
+ text-align: center;
+ clear: both;
+ font-family: Georgia, Serif;
+ font-size: 1.2em;
+ font-style: italic;
+ color: #4c4c4c;
+}
+.container .content .right .frm .disclaimer {
+ margin: 0 auto;
+ padding: 12px 0 0 0;
+ text-align: center;
+ clear: both;
+ font-size: 1.0em;
+ font-style: normal;
+ color: #4c4c4c;
+ font-family: Georgia, Serif;
+ width: 88%;
+}
+.container .content .right .frm .field .btn {
+ margin: 0 auto;
+ width: 200px;
+ height: 42px;
+ background: #eb6720;
+ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4NTkyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYzY4MjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+ background: -moz-linear-gradient(top,  rgba(216,89,34,1) 0%, rgba(236,104,32,1) 100%);
+ background: -webkit-linear-gradient(top,  rgba(216,89,34,1) 0%,rgba(236,104,32,1) 100%);
+ background: linear-gradient(to bottom,  rgba(216,89,34,1) 0%,rgba(236,104,32,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d85922', endColorstr='#ec6820',GradientType=0 );
+ border: 1px solid #d85922;
+ display: block;
+ border-radius: 0.20em;
+ color: #ffffff;
+ font-size: 18px;
+ line-height: 40px;
+ box-shadow: 2px 3px 5px 0px rgba(0, 1, 1, 0.3);
+ outline: none;
+ cursor: pointer;
+}
+.container .bottom {
+ clear: both;
+ overflow: hidden;
+ padding: 26px 16px 25px 16px;
+ color: #FFF;
+}
+.container .bottom .left {
+ padding: 12px 15px 0px 11px;
+ border-radius: 0.80em;
+ float: left;
+ width: 467px;
+ background-color: #77aca1;
+ height: 162px;
+}
+.container .bottom .left p {
+ margin: 0;
+ padding: 0;
+ text-align: justify;
+}
+.container .bottom .left p.testimony {
+ font-size: 1.4em;
+ line-height: 1.5;
+ float: left;
+ width: 447px;
+ word-spacing: -0.08em;
+}
+.container .bottom .left p.testimony span {
+ font-family: Georgia, Serif;
+ font-size: 2.28em;
+ font-weight: bold;
+ line-height: 1.0;
+ vertical-align: top;
+}
+.container .bottom .left .quote {
+ font-family: Georgia, Serif;
+ font-weight: bold;
+ font-size: 3.2em;
+ line-height: 1.0;
+ vertical-align: middle;
+ float: left;
+ height: 150px;
+ width: 20px;
+}
+.container .bottom .left p.testifier {
+ margin: -22px 46px 0 0;
+ font-size: 1.2em;
+ line-height: 1.4;
+ text-align: right;
+ float: right;
+}
+.container .bottom .right {
+ float: left;
+ width: 50%;
+ overflow: hidden;
+}
+.container .bottom .right p {
+ line-height: 113px;
+ height: 113px;
+}
+.container .bottom .right p img {
+ display: inline;
+ padding-left: 17px;
+ vertical-align: middle;
+}
+.footer {
+ margin: 20px auto;
+ width: 1024px;
+ height: 89px;
+ clear: both;
+ text-align: center;
+ line-height: 89px;
+}
+.footer p {
+ font-weight: normal;
+ padding: 8px 5px;
+ line-height: 1.4em;
+ color: #666;
+}
+.footer p a {
+ color: #666;
+}
+/* Thank You Page */
+.container.ty .content {
+ background: none;
+ text-align: center;
+}
+.container.ty .content h1 {
+ padding: 80px 0 20px 0;
+ font-size: 4.5em;
+ color: #006338;
+}
+.container.ty .content p {
+ padding: 0 0 8px 0;
+ font-size: 1.8em;
+ color: #000000;
+}
+.container.ty .content p img {
+ margin: 50px auto;
+}
+
+/* B Styles */
+.container.b .header {
+ height: 156px;
+ line-height: 60px;
+ overflow: visible;
+}
+.container.b .header #phone img {
+ padding-top: 17px;
+}
+.container.b .offer {
+ position: absolute;
+ top: 48px;
+ left: 0;
+ width: 100%;
+ z-index: 10000;
+}
+.container.b .offer img {
+ margin: 0 auto;
+}
+.container.b .content {
+ background-image: none;
+ overflow: hidden;
+}
+.container.b .content .left {
+ padding-top: 123px;
+}
+.container.b .content .right {
+ padding-top: 118px;
+}

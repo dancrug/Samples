@@ -1,0 +1,102 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="A.aspx.cs" Inherits="Sample.A" %>
+
+<%@ Register TagPrefix="uc" TagName="LeadForm" Src="~/controls/LeadForm.ascx" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <title></title>
+ <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+ <link href="css/styles.min.css" rel="stylesheet" type="text/css" />
+ <link href="scripts/lightbox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+ <script src="scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+ <script src="scripts/jquery.maskedinput.js" type="text/javascript"></script>
+ <script src="scripts/lightbox/jquery.fancybox.pack.js" type="text/javascript"></script>
+ <script src="scripts/Functions.js" type="text/javascript"></script>
+ <script type="text/javascript">
+  jQuery(function ($) {
+   $("#LeadForm1_txtPhone").mask("999-999-9999");
+  });
+  $(document).ready(function () {
+   $("#LeadForm1_txtPhone").keydown(function (e) {
+    if (e.which == 36) {
+     e.preventDefault();
+    }
+   });
+  });
+ </script>
+</head>
+<body>
+ <div class="container">
+  <div class="header">
+   <div id="logo">
+    <img src="images/" alt="" />
+   </div>
+   <div id="slogan" runat="server">
+    <span>Beauty you can see. Value you can appreciate.</span>
+   </div>
+   <div id="phone" runat="server">
+    <img src="images/phone-icon.png" alt="" />
+    <span id="phoneNumber" runat="server"></span>
+   </div>
+  </div>
+  <div class="content">
+   <div class="line">
+   </div>
+   <div class="left">
+    <img src="images/" alt="" />
+    <p>
+     *See full offer details. Conditions may apply.</p>
+   </div>
+   <div class="right">
+    <h1>
+     Request a
+     <br />
+     FREE Consultation</h1>
+    <h2>
+     Our scheduling department will be in touch with you shortly.</h2>
+    <form runat="server">
+    <uc:LeadForm ID="LeadForm1" runat="server"></uc:LeadForm>
+    </form>
+   </div>
+  </div>
+  <div class="bottom">
+   <div class="left">
+    <span class="quote">“</span>
+    <p class="testimony">
+     Replacing our windows was a pleasant process from the first phone call to the last. Aaron is very knowledgeable
+     and explained the product, installation, cost, etc. Making us very comfortable in our decision - Installers
+     were courteous, friendly, and did an excellent job. We replaced 7 windows and are so pleased with the product.<span>”</span></p>
+    <p class="testifier">
+     -Earl & Audrey V. of Mankato, MN</p>
+   </div>
+   <div class="right">
+    <p>
+     <img src="images/BBB-accredited-business.png" alt="" />
+     <img src="images/certified-master-installer.png" alt="" />
+     <img src="images/energy-star-award.png" alt="" />
+     <img src="images/limited-warranty.png" alt="" />
+    </p>
+    <%--<img src="images/2012-home-satisfaction-a ward.png" alt="" />
+     <img src="images/2014-home-satisfaction-award.png" alt="" />
+     <img src="images/2014-super-service-award.png" alt="" />
+     <img src="images/angies-list-a-rating.png" alt="" />
+     <img src="images/certified-indoor-advantage-gold.png" alt="" />
+     <img src="images/nfrc-certified.png" alt="" />
+     <img src="images/proud-producer-of-certified-product.png" alt="" />--%>
+   </div>
+  </div>
+ </div>
+ <div class="footer">
+  <p>
+   ©
+   <script type="text/javascript">    document.write(new Date().getFullYear());</script>
+   Sample LLC. All rights reserved. <a href=""
+    data-fancybox-type="iframe" class="fancybox">Privacy Policy</a> | <a href=""
+     data-fancybox-type="iframe" class="fancybox">Terms of Use</a> | <a href="" target="_blank">Contact Us</a>
+  </p>
+ </div>
+</body>
+</html>

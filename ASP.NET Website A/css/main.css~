@@ -1,0 +1,285 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-weight: normal;
+    font-family: Arial, Sans-Serif;
+    position: relative;
+}
+
+div, form, input, select, h1, h2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1024px;
+    min-width: 768px;
+}
+
+    .container p {
+        margin: 30px 0 0 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .container .frm {
+        margin: 0 1%;
+        padding: 0;
+        display: block;
+    }
+
+    .container h1 {
+        margin: 8px 0 5px 0;
+        padding: 0;
+        font-size: 1.6em;
+        width: 100%;
+    }
+
+    .container h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .container .top {
+        padding: 5px 0 0 0;
+        height: 70px;
+        border-bottom: 1px solid #CCC;
+    }
+
+        .container .top img {
+            display: inline;
+            vertical-align: middle;
+        }
+
+        .container .top .left {
+            width: 50%;
+            float: left;
+        }
+
+        .container .top .right {
+            width: 50%;
+            float: left;
+            text-align: right;
+        }
+
+    .container .col {
+        padding-right: 1%;
+        width: 48%;
+        float: left;
+    }
+
+    .container .field {
+        margin: 0;
+        padding: 5px 0;
+        width: 100%;
+        position: relative;
+        clear: both;
+    }
+
+    .container .col .field {
+        min-height: 60px;
+    }
+
+        .container .col .field .txt.hidden {
+            margin: 5px 0 0 0;
+            display: none;
+        }
+
+    .container .lbl {
+        margin: 8px 10px 5px 0;
+        padding: 0;
+        display: block;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    .container .txt {
+        margin: 0;
+        padding: 0.5% 1%;
+        width: 97.5%;
+        font-size: 1.4em;
+        line-height: 28px;
+        border: 1px inset #CCC;
+        outline: none;
+        border-radius: 0.40em;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0.40em;
+    }
+
+        .container .txt.add {
+            width: 87.5%;
+        }
+
+    .container .field.market {
+        margin: 20px 0 10px 0;
+        clear: both;
+        padding: 10px 0;
+        border-top: 1px solid #CCC;
+        overflow: visible;
+    }
+
+    .container .multibox {
+        overflow: hidden;
+    }
+
+        .container .multibox div {
+            clear: both;
+        }
+
+        .container .multibox .data {
+            padding: 5px;
+            font-size: 1.4em;
+            float: left;
+            width: 20%;
+            clear: none;
+        }
+
+    .container table.multibox {
+        margin: 0 0 0 0;
+        clear: both;
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+        .container table.multibox tr td, .container table.multibox tr th {
+            margin: 0;
+            padding: 5px 0;
+            text-align: left;
+        }
+
+            .container table.multibox tr td:first-child, .container table.multibox tr th:first-child {
+                padding-left: 5%;
+            }
+
+    .container .multibox .data .txt {
+        display: inline;
+        border: none;
+        width: 50%;
+        font-size: 1.0em;
+        line-height: 30px;
+    }
+
+    .container .field.market .multibox .txt {
+        max-width: 115px;
+        width: 85%;
+        min-width: 10%;
+        font-size: 1.2em;
+        padding: 3px;
+        line-height: 18px;
+        border: 1px solid #CCC;
+    }
+
+    .container .ddl {
+        margin: 0;
+        padding: 1% 0.5%;
+        width: 99%;
+        font-size: 1.4em;
+        border: 1px inset #CCC;
+        border-radius: 0.40em;
+        -webkit-border-radius: 0.40em;
+    }
+
+    .container .header {
+        overflow: hidden;
+    }
+
+        .container .header .lbl {
+            float: left;
+        }
+
+        .container .header .chkspan {
+            margin: 8px 0 5px 0;
+            display: block;
+            float: left;
+        }
+
+        .container .header span.chk {
+            display: block;
+            float: left;
+        }
+
+    .container input.chk {
+        margin: 0 3px;
+        padding: 0;
+        vertical-align: middle;
+        overflow: visible;
+    }
+
+    .container .chkspan .lbl {
+        margin: 0;
+        font-weight: normal;
+        font-size: 1.2em;
+        display: inline;
+        vertical-align: middle;
+        float: none;
+        line-height: 20px;
+    }
+
+    .container .btn {
+        margin: 0;
+        padding: 0;
+        line-height: 28px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.4em;
+        border-radius: 0.40em;
+        border: 1px solid #CCC;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0.40em;
+        background: rgb(238,238,238);
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2NjY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+    }
+
+        .container .btn.addmarket {
+            margin: 0;
+            position: absolute;
+            bottom: 0px;
+            width: 99.5%;
+            height: 40px;
+        }
+
+        .container .btn.submit {
+            margin-top: 20px;
+            width: 99.5%;
+            height: 50px;
+            font-weight: bold;
+        }
+
+        .container .btn.remove {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1.0em;
+        }
+
+    .container .field.market .multibox .btn.remove {
+        position: absolute;
+        line-height: 18px;
+        left: 0;
+    }
+
+    .container .footer {
+        margin: 30px 0;
+        height: 50px;
+    }
+/* AutoComplete */
+.ui-autocomplete {
+    border: 1px solid #CCC;
+    background-color: #FFF;
+}
+
+    .ui-autocomplete .ui-menu-item {
+        font-size: 1.4em;
+        line-height: 34px;
+    }
