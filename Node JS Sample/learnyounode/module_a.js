@@ -1,25 +1,15 @@
-module.exports = function module_a(fdir, fext){
-  var path = require('path')
-  var fs = require('fs')
-  var data = [];
-  var fileCount = 0;
+var path = require('path')
+var fs = require('fs')
 
-  /*
+module.exports = function (fdir, fext, callback){
   fs.readdir(fdir, function (err, files) {
-    if (err) {
+    if(err)
       return callback(err);
-    }
-    for(var i=0; i<files.length; i++){
-      if (path.extname(files[i]).replace('.','') == fext){
-        data[fileCount] = files[i];
-        fileCount++;
-      }
-    }
-    callback(null, data);
+
+    files = files.filter(function (file) {
+      return path.extname(file) === '.' + fext;
+    })
+
+    callback(null, files);
   });
-*/
-  function callback(err, data){
-    return data;
-  }
-  callback(null, fdir);
 }
