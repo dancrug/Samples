@@ -1,0 +1,36 @@
+<script>
+var outcount = 0;
+var output = new Array(2);
+
+function init () {
+  for(var i=2;i<=4;i++) {
+      var url = process.argv[i];
+      getURLContent(url);
+      outcount +=1;
+  }
+}
+
+function getURLContent(url) {
+  var result = '';
+  http.get(url, function(res) {
+    res.setEncoding('utf8')
+    res.on('error', function (e) {
+      return e
+    });
+    res.on('data', function(data) {
+      result += data;
+    });
+    res.on('end', function() {
+      return result;
+    });
+  }).on('error', function(e) {
+    return e;
+  });
+}
+
+function callback(result, outcount) {
+  output[outcount] = result;
+}
+
+init();
+</script>

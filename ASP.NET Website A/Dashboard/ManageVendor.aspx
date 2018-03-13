@@ -1,0 +1,39 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ManageVendor.aspx.cs" Inherits="SampleAffilForm.Dashboard.ManageVendor"
+ MasterPageFile="~/Dashboard/Master.Master" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+ <h1>Sample | Vendor Dashboard</h1>
+ <p>
+  <asp:HyperLink runat="server" NavigateUrl="~/Dashboard/" Text="< Go Back"></asp:HyperLink>
+ </p> 
+ <asp:Panel runat="server" ID="Panel0" CssClass="dashboard">
+  <asp:GridView ID="VendorGrid" runat="server" AutoGenerateColumns="False"
+   CssClass="grid sortable" DataKeyNames="ID" DataSourceID="SqlDataSource1" UseAccessibleHeader="true">
+   <Columns>
+    <asp:BoundField DataField="ID" ReadOnly="true" HeaderText="ID" InsertVisible="False" SortExpression="ID" />
+    <asp:BoundField DataField="CallCenterName" Visible="true" HeaderText="Call Center Name" SortExpression="CallCenterName" />
+    <asp:CommandField ShowDeleteButton="true" ControlStyle-CssClass="btn ctrl" />
+   </Columns>
+  </asp:GridView>
+  <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AffiliateInformationConnectionString %>"
+   SelectCommand="sp_Sample_Return_Affil_CC" SelectCommandType="StoredProcedure" DeleteCommand="sp_Sample_Insert_Affil_CC"
+   DeleteCommandType="StoredProcedure">
+   <DeleteParameters>
+    <asp:Parameter Name="CallCenterName" Type="String" />
+    <asp:Parameter Name="Type" Type="String" DefaultValue="DELETE" />
+    <asp:Parameter Name="ID" Type="Int32" />
+   </DeleteParameters>
+  </asp:SqlDataSource>
+  <button type="button" id="btnInsertCC" data-name="CC" class="btn">
+   Add New Vendor
+  </button>
+  <div id="pnlAddCC" class="pnlForm">
+   <label class="lbl">
+    Enter Call Center Name:</label><br />
+   <asp:TextBox runat="server" ID="txtCC" CssClass="txt" ClientIDMode="Static"></asp:TextBox><br />
+   <asp:Button runat="server" ID="btnSubmit" OnClick="btnSubmit_Click" CssClass="btn" Text="Submit" />
+   <button type="button" id="btnCancelCC" class="btn cancel" data-name="CC">
+    Cancel</button>
+  </div>
+ </asp:Panel>
+</asp:Content>

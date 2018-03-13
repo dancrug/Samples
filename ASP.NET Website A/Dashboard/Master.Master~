@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="SampleAffilForm.Dashboard.Master" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <title>ConvergeDirect - Affiliate Manager</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+ <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+ <link href="../css/masterdashboard.css?v=12212017" rel="stylesheet" type="text/css" />
+ <script src="../scripts/jquery-1.12.min.js" type="text/javascript"></script>
+ <script src="../scripts/jquery.maskedinput.js" type="text/javascript"></script>
+ <script src="../scripts/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="../scripts/DashboardFunctions.js" type="text/javascript"></script>
+ <script src="../scripts/sortable.js" type="text/javascript"></script>
+ <script type="text/javascript">
+  $(document).ready(function () {
+   init();
+  });
+ </script>
+ <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+</head>
+<body>
+ <div class="container">
+  <div class="header">
+   <div class="left">
+    <img src="../img/renewal-by-anderson-logo.png" alt="Sample" />
+   </div>
+   <div class="right">
+    <img src="../img/CD_200x100.png" alt="ConvergeDirect" />
+   </div>
+  </div>
+  <form id="form1" runat="server">
+   <div class="content">
+    <asp:Panel runat="server" ID="pnlLoggedIn" Visible="false">
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+    </asp:Panel>
+    <asp:Panel runat="server" ID="pnlLogin" Visible="false" DefaultButton="btnHash">
+     <label>Enter Hash to Continue:</label>
+     <asp:TextBox runat="server" ID="txtHash" TextMode="Password"></asp:TextBox>
+     <asp:Button runat="server" ID="btnHash" Text="Submit" OnClick="btnHash_Click" />
+    </asp:Panel>
+   </div>
+
+  </form>
+  <div class="footer">
+  </div>
+ </div>
+</body>
+</html>

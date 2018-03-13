@@ -1,0 +1,442 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 62.5%;
+    color: #000000;
+    position: relative;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #9bb88a;
+}
+
+hr {
+    padding: 0;
+    margin: 15px 0;
+    background-color: #CCC;
+    height: 2px;
+    border: none;
+    clear: both;
+}
+
+details {
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 1200px;
+    width: 98%;
+}
+
+    .container .header {
+        padding: 15px;
+        overflow: hidden;
+        height: 50px;
+        border-bottom: 1px solid #666;
+    }
+
+        .container .header .left {
+            float: left;
+        }
+
+        .container .header .right {
+            float: right;
+        }
+
+    .container form {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .content {
+        margin: 20px 0 0 0;
+    }
+
+        .container .content .pnlForm {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+            .container .content .pnlForm div {
+                margin: 0;
+                padding: 0 1.5% 0 0;
+                overflow: visible;
+            }
+
+                .container .content .pnlForm div div.right {
+                    float: right;
+                    width: 30%;
+                }
+
+        .container .content .left {
+            float: left;
+        }
+
+        .container .content .pnlForm div.status {
+            float: right;
+            width: 30%;
+            z-index: 5;
+        }
+
+            .container .content .pnlForm div.status table tr td {
+                padding: 5px 15px;
+                font-size: 1.4em;
+                text-align: center;
+            }
+
+                .container .content .pnlForm div.status table tr td label {
+                    margin: 0 auto;
+                    padding: 0;
+                    display: block;
+                    cursor: pointer;
+                }
+
+                .container .content .pnlForm div.status table tr td input {
+                    margin: 0 auto;
+                    padding: 0;
+                    display: block;
+                    cursor: pointer;
+                }
+
+        .container .content .pnlForm div div {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            min-width: auto;
+            float: none;
+            overflow: hidden;
+        }
+
+        .container .content .pnlForm .btn.add {
+            clear: both;
+        }
+
+        .container .content div.pnlAdd {
+            margin: 0 21%;
+            padding: 1% 4% 2% 4%;
+            top: 5%;
+            left: 0;
+            background-color: #FFFFFF;
+            border: 1px solid #CCC;
+            position: absolute;
+            width: 50%;
+            display: none;
+            z-index: 50;
+        }
+
+            .container .content div.pnlAdd .hdnfrm {
+                display: none;
+            }
+
+            .container .content div.pnlAdd .field {
+                min-height: 50px;
+            }
+
+                .container .content div.pnlAdd .field .txt {
+                    width: 98%;
+                    line-height: 1.4;
+                    padding: 1%;
+                }
+
+                .container .content div.pnlAdd .field .ddl {
+                    width: 98%;
+                    line-height: 1.4;
+                    padding: 1%;
+                }
+
+                .container .content div.pnlAdd .field .txt.multiline {
+                    font-family: Arial, Sans-Serif;
+                    font-size: 1.4;
+                    margin-bottom: 10px;
+                }
+
+        .container .content .grid {
+            margin: 0 0 25px 0;
+            padding: 0;
+            font-size: 1.4em;
+            max-width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+            .container .content .grid tr th {
+                padding: 5px;
+                text-align: left;
+                cursor: pointer;
+            }
+
+            .container .content .grid tr td {
+                padding: 5px;
+            }
+
+                .container .content .grid tr td .multiline {
+                    font-family: Arial, Sans-Serif;
+                    font-size: 1.0em;
+                    line-height: 1.4;
+                }
+
+            .container .content .grid tr.edit td input[type=text] {
+                width: 95%;
+                padding: 2%;
+            }
+
+        .container .content h1, .container .content summary {
+            margin: 12px 0 10px 0;
+            padding: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .container .content h2 {
+            margin: 12px 0 10px 0;
+            padding: 0;
+            font-size: 1.6em;
+        }
+
+        .container .content h3 {
+            margin: 12px 0 10px 0;
+            padding: 0;
+            font-size: 1.4em;
+        }
+
+        .container .content .btn {
+            padding: 1.5%;
+        }
+
+        .container .content .dashboard .grid {
+            width: 50%;
+        }
+
+            .container .content .dashboard .grid tr td:last-child {
+                width: 25%;
+            }
+
+        .container .content .dashboard .btn.ctrl {
+            padding: 0 5%;
+            float: right;
+        }
+
+        .container .content .dashboard .pnlForm {
+            width: 15%;
+            padding: 1.5% 0;
+            display: none;
+        }
+
+            .container .content .dashboard .pnlForm .lbl {
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+
+            .container .content .dashboard .pnlForm .txt {
+                width: 94%;
+                padding: 2%;
+            }
+
+            .container .content .dashboard .pnlForm .btn {
+                margin: 8px 0 0 0;
+                padding: 4%;
+                float: right;
+            }
+
+        .container .content .btnAddNote {
+            margin: 12px 0 10px 0;
+            float: right;
+            display: block;
+        }
+
+        .container .content .details {
+            font-size: 1.4em;
+        }
+
+        .container .content div.noteSummary {
+            width: 75%;
+            overflow: auto;
+            max-height: 400px;
+        }
+
+            .container .content div.noteSummary span.noteItem {
+                display: block;
+                border-bottom: 1px solid #CCC;
+                line-height: 1.6;
+            }
+
+            .container .content div.noteSummary .datalist br {
+                display: none;
+            }
+
+            .container .content div.noteSummary span.alt {
+            }
+
+        .container .content div.pnlNote {
+            margin: 0;
+            padding: .50%;
+            display: none;
+            background-color: #FFF;
+        }
+
+            .container .content div.pnlNote .txtNote {
+                height: 150px;
+                width: 98%;
+            }
+
+        .container .content .datalist {
+            margin: 10px 0 0 0;
+            font-size: 1.4em;
+        }
+
+.red, .Off {
+    background-color: Red;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.orange, .Moderate {
+    background-color: Orange;
+    font-weight: bold;
+}
+
+.green, .On {
+    background-color: LightGreen;
+    font-weight: bold;
+}
+
+.yellow {
+    background-color: Yellow;
+    font-weight: bold;
+}
+
+.err {
+    color: Red;
+}
+
+.footer {
+    height: 50px;
+}
+/* AutoComplete */
+.ui-menu {
+    background-color: #FFF;
+    font-size: 1.4em;
+    border: 1px solid #666;
+}
+
+    .ui-menu .ui-menu-item {
+        padding: 6px 10px;
+    }
+
+        .ui-menu .ui-menu-item:hover {
+            background-color: #9bb88a;
+            color: #FFFFFF;
+        }
+
+.ui-helper-hidden-accessible div {
+    padding: 6px 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 96%;
+        padding: 0 2%;
+        overflow: visible;
+    }
+
+        .container .header img {
+            width: 75%;
+        }
+
+        .container .header .left {
+            width: 50%;
+        }
+
+        .container .header .right {
+            width: 50%;
+            text-align: right;
+        }
+
+        .container .content h1 {
+            font-size: 1.6em;
+        }
+
+        .container .content div.pnlAdd {
+            margin: 0 5%;
+            width: 82%;
+        }
+
+        .container .content .pnlForm {
+            overflow: visible;
+        }
+
+            .container .content .pnlForm#pnlCompany, .container .content .pnlForm#pnlDetails, .container .content .pnlForm#pnlCallCenter, .container .content .pnlForm#pnlEmailAddressDel, .container .content .pnlForm#pnlContactInfo, .container .content .pnlForm#pnlBillingInfo {
+                display: none;
+            }
+
+            .container .content .pnlForm div {
+                padding: 0 0 15px 0;
+                float: none;
+                clear: both;
+            }
+
+                .container .content .pnlForm div div {
+                    overflow: visible;
+                }
+
+                .container .content .pnlForm div.status {
+                    float: none;
+                    width: 50%;
+                }
+
+                .container .content .pnlForm div div.right {
+                    float: none;
+                    width: 90%;
+                }
+
+            .container .content .pnlForm .btn.add {
+                float: none;
+            }
+
+        .container .content div.noteSummary {
+            width: 100%;
+            max-height: 450px;
+        }
+
+        .container .content .dashboard .grid {
+            width: 100%;
+        }
+
+        .container .content .dashboard .btn.ctrl {
+            float: none;
+        }
+
+            .container .content .dashboard .btn.ctrl:nth-child(1) {
+                display: none;
+            }
+
+        .container .content .dashboard .grid tr th, .container .content .dashboard .grid tr td {
+            width: 32%;
+            cursor: pointer;
+        }
+
+            .container .content .dashboard .grid tr th:first-child, .container .content .dashboard .grid tr td:first-child {
+                width: 5%;
+            }
+
+        .container .content .dashboard .pnlForm {
+            width: 100%;
+        }
+
+            .container .content .dashboard .pnlForm .btn {
+                float: none;
+            }
+}
