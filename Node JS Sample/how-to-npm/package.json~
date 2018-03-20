@@ -8,5 +8,6 @@
   "author": "Dan Cruger",
   "license": "ISC",
   "description": "How to npm testing.",
+  "devDependencies": {},
   "repository": "https://github.com/dancrug/Samples"
 }
