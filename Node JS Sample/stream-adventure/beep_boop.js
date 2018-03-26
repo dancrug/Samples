@@ -41,6 +41,7 @@ process.stdin.on('end', function () {
 */
 
 //Lesson 5
+/*
 var http = require('http')
 var fs = require('fs')
 var port = process.argv[2];
@@ -69,3 +70,38 @@ var server = http.createServer(function (req, resp){
   console.log(err)
 })
 server.listen(port)
+*/
+
+//Lesson 6
+/*
+var request = require('request');
+var output = request.post('http://localhost:8099/');
+process.stdin.pipe(output).pipe(process.stdout)
+*/
+
+//Lesson 7
+/*
+var websocket = require('websocket-stream')
+var stream = websocket('ws://localhost:8099')
+stream.write("hello\n")
+*/
+
+//Lesson 8
+/*
+var body = ''
+process.stdin.on('readable', function () {
+  var chunk = process.stdin.read();
+  if (chunk !== null) {
+    body += chunk
+  }
+});
+process.stdin.on('end', function () {
+  var output = body
+  var startIndex = output.match("<span class=\"loud\">").index;
+  var endIndex = output.match("</span>").index;
+  var currentHtml = output.substring(startIndex+19, endIndex);
+  //output.replace(currentHtml, currentHtml.toUpperCase())
+  output = output.replace(currentHtml, currentHtml.toUpperCase())
+  process.stdout.write(output);
+});
+*/
