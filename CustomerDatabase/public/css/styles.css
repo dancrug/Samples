@@ -1,0 +1,32 @@
+body {
+	background-color: #f1f1f1;
+	color: #000000;
+	font-size: 62.5%;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
+h1 {
+	font-size: 2.0em;
+}
+
+label, input, p, ul li {
+	font-size: 1.8em;
+}
+
+table {
+	font-size: 1.8em;
+}
+
+a {
+}
+
+.form-group {
+	padding: 10px;
+}
+
+.alert-error {
+	color: red;
+}
+.alert-success {
+	color: green;
+}
